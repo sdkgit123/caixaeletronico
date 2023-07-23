@@ -1,0 +1,1 @@
+Um caixa Eletrônico que devolve o preço que voce deseja com notas de 100, 50, 10, 5 e 1 real
