@@ -4,7 +4,6 @@
 
 int main(){
     int quantos;
-    int i;
     int um = 0;
     int cinco = 0;
     int dez = 0;
