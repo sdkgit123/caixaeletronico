@@ -2,21 +2,13 @@
 #include<stdlib.h>
 #define MAX 600
 
-int main(){
-    int quantos;
+void calculo(int quantos){
     int um = 0;
     int cinco = 0;
     int dez = 0;
     int cinc = 0;
     int cem = 0;
-    printf("Quantos reais voce que sacar?:\n");
-    scanf("%d", &quantos);
-    while(quantos>MAX || quantos<1){
-        printf("Saque nao permitido.\n");
-        printf("Quantos reais voce que sacar?:\n");
-        scanf("%d", &quantos);
-    }
-    while(quantos>=1){
+        while(quantos>=1){
         if(quantos-100 >= 0){
             cem++;
             quantos = quantos - 100;
@@ -40,5 +32,16 @@ int main(){
     printf("%d notas de 10 reais\n", dez);
     printf("%d notas de 5 reais\n", cinco);
     printf("%d notas de 1 real\n", um);
+}
+int main(){
+    int quantos;
+    printf("Quantos reais voce que sacar?:\n");
+    scanf("%d", &quantos);
+    while(quantos>MAX || quantos<1){
+        printf("Saque nao permitido.\n");
+        printf("Quantos reais voce que sacar?:\n");
+        scanf("%d", &quantos);
+    }
+    calculo(quantos);
     return 0;
 }
